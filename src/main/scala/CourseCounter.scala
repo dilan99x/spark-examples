@@ -11,7 +11,7 @@ object CourseCounter {
     val sparkContext = new SparkContext("local[*]", "CourseCounter")
 
     // Load up each line of the ratings data into an RDD
-    val lines = sparkContext.textFile("/home/dilan/Desktop/Workshop/DataSet/student_data")
+    val lines = sparkContext.textFile("/home/user/DataSet/student_data")
 
     // Caching the student data in the cache store
     lines.cache()

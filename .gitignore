@@ -27,3 +27,4 @@ nbdist/
 /.gitignore
 /sparktraining.iml
 /sparkexamples.iml
+/.idea/

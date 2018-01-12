@@ -13,7 +13,7 @@ object CourseStudentCounter {
     val sc = new SparkContext("local[*]", "CourseCounter")
 
     // Load up each line of the ratings data into an RDD
-    val lines = sc.textFile("/home/dilan/Desktop/Workshop/DataSet/student_data")
+    val lines = sc.textFile("/home/user/DataSet/student_data")
 
 
     val courseCounts = lines.map(x => ((x.toString().split(",")(6),x.toString().split(",")(2), x)))

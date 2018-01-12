@@ -10,7 +10,7 @@ object MostStudentsCountryCalculator {
     val sc = new SparkContext("local[*]", "CourseCounter")
 
     // Load up each line of the ratings data into an RDD
-    val lines = sc.textFile("/home/dilan/Desktop/Workshop/DataSet/student_data")
+    val lines = sc.textFile("/home/user/DataSet/student_data")
 
     // Caching the student data in the cache store
     lines.cache()

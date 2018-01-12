@@ -14,10 +14,10 @@ object StudentQualificationsJoin {
     val sc = new SparkContext("local[*]", "Joiner")
 
     // Reading student data from the text file
-    val studentRdd = sc.textFile("/home/dilan/Desktop/Workshop/DataSet/student_join_data")
+    val studentRdd = sc.textFile("/home/user/DataSet/student_join_data")
 
     // Reading education qualification data from the text file
-    val educationQlfRdd = sc.textFile("/home/dilan/Desktop/Workshop/DataSet/student_course")
+    val educationQlfRdd = sc.textFile("/home/user/DataSet/student_course")
 
     // Making tuple with student id and rest of the student details
     val students = studentRdd.map(x => (x.toString().split(",")(0), x))

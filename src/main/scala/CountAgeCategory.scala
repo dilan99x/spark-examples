@@ -16,7 +16,7 @@ object CountAgeCategory {
     val sc = new SparkContext("local[*]", "AgeFilter")
 
     // Load up each line of the ratings data into an RDD
-    val lines = sc.textFile("/home/dilan/Desktop/Workshop/DataSet/student_data")
+    val lines = sc.textFile("/home/user/DataSet/student_data")
     /* Convert each line to a string, split it out by comma (,)  and extract the third field.
       * (The file format is first name, last name, age, continent, country, education level, selected course)
       */

@@ -11,7 +11,7 @@ object ListStudents {
     val sc = new SparkContext("local[*]", "StudentsCounter")
 
     // Load up each line of the ratings data into an RDD
-    val lines = sc.textFile("/home/dilan/Desktop/Workshop/DataSet/student_data")
+    val lines = sc.textFile("/home/user/DataSet/student_data")
 
     //Extracting the first name and the last name
     val names = lines.map(x => (x.toString().split(",")(0), x.toString().split(",")(1)))
